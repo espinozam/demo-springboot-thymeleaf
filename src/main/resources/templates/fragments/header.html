@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<header th:fragment="header">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" th:href="@{/}">La Meva App</a>
+            <div>
+                <a class="text-white me-3" th:href="@{/}">Inici</a>
+                <a class="text-white" th:href="@{/formulari}">Formulari</a>
+            </div>
+        </div>
+    </nav>
+</header>
+</body>
+</html>
