@@ -19,4 +19,9 @@ public class HomeController {
         return "formulari";
     }
 
+    @PostMapping("/processar")
+    public String processarFormulari(@RequestParam String nom, Model model) {
+        model.addAttribute("salutacio", "Hola, " + nom + "!");
+        return "resultat";
+    }
 }
