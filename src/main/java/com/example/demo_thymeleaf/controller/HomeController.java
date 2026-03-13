@@ -5,6 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import java.util.Arrays;
 
 @Controller
 public class HomeController {
@@ -13,6 +14,7 @@ public class HomeController {
     public String index(Model model) {
         model.addAttribute("titulo", "Hola mundo!");
         model.addAttribute("mensaje", "Bienvenido a Thymelead");
+        model.addAttribute("llista", Arrays.asList("Item 1", "Item 2", "Item 3"));
         return "index";
     }
 
