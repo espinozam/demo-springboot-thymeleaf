@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${titulo}">Title</title>
+</head>
+<body>
+<div>
+    <div>
+        <h1>Formulari de Contacte</h1>
+        <form th:action="@{/processar}" method="post">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
