@@ -13,4 +13,10 @@ public class HomeController {
         model.addAttribute("mensaje", "Bienvenido a Thymelead");
         return "index";
     }
+
+    @GetMapping("/formulari")
+    public String mostrarFormulari() {
+        return "formulari";
+    }
+
 }
